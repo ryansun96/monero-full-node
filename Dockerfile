@@ -29,4 +29,4 @@ EXPOSE 18080 18081
 
 
 ENTRYPOINT ["./monerod"]
-CMD ["--non-interactive", "--enable-dns-blocklist", "--out-peers=16"]
+CMD ["--non-interactive", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind", "--enable-dns-blocklist", "--out-peers=16"]
